@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>experience</title>
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&family=Poppins:ital,wght@1,500&family=Roboto&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+   <style>
+      *{
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+      }
+      .container1{
+         background: radial-gradient(#fff,#f4b400)
+      }
+      .logo h2{
+         color: green;
+
+      }
+      #MenuItems li a {
+         color: green;
+      }
+      .resumeexpcontainer{
+         display: flex;
+         width:90%;
+         margin: auto;
+
+      }
+      .resumeexp{
+         display: flex;
+         background-color: #efefef;
+         box-shadow:  2px 4px black;
+         margin-right:  10px;
+         
+      
+      }
+      .resumecol {
+         width: 170px;
+         background-color: #81c784;
+
+      }
+      .resumecol img{
+         border-radius: 50%;
+         margin:5px 10px;
+
+      }
+      .job .title {
+         width:100%;
+         height: 100px;
+         background-color: rgba(0,0,0,0.8);
+         color: white;
+         text-align: center;
+         font-size: 14px;
+        padding-top: 20px;
+     }
+     .resumecoldisc h5{
+         background-color: rgba(0,0,0,0.8);
+         color: white;
+         text-align: center;
+         width: 80%;
+         margin: 0 auto;
+      }
+      .resumecoldisc p{
+         font-size: 10px;
+         padding: 5px 5px 0px 5px;
+         color: #000;
+         width: 100%;
+         margin:0 auto;
+         text-align: center; 
+         }
+         .resumecoldisc .fa{
+         font-size: 14px;
+         padding: 0 5px;
+      }
+      .skills p{
+     text-align: left;
+      }
+      .job p{
+         color: black;
+         font-size: 9px;
+         width: 90%;
+         margin: 5px auto;
+      }
+      .job h4{
+         background-color: #81c784;
+         text-align: center;
+         font-family: 'Kaushan Script',cursive;
+         width:80%;
+         margin: 5px auto;
+      }
+
+      @media only screen and (max-width: 800px){
+         .resumeexpcontainer{
+            display: block;
+
+         }
+         .resumeexp{
+            display: block;
+         }
+
+         .resumecol{
+            display: none;
+            
+         }
+         
+     }
+
+         @media only screen and (max-width: 600px){
+            .resumeexpcontainer{
+            display: block;
+
+         }
+         .resumeexp{
+            display: block;
+         }
+        .resumecol{
+         display: none;
+         }
+         .resumecol img{
+            width: 100px;
+            height: 100px;
+         }
+         }
+      
+   	</style>
+   </head>
+</body>
+	<div class="container1">
+	<div class="navbar">
+		<div class="logo">
+			<h2>portfolio</h2>
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="experience.html">WorkExperience</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="#footer">Contact</a></li>
+			</ul>
+		</nav>
+		
+		<img src="images/menu.jpg" class="menu-icon"
+		onclick="menutoggle()">
+	</div>
+
+
+	<div class="resumeexpcontainer">
+	<div class="resumeexp">
+		
+		<div class="resumecol">
+		 	<img src="images/sairamya.jpg" width="150px"height="150px">
+		 	<div class="resumecoldisc">
+		 		<div><h5>contact</h5>
+		 		<p><i class="fa fa-phone"></i>123-456-7890</p>
+		 		<p><i class="fa fa-envelope"></i>sairamya.barri5@gmail.com</p>
+		 		<p><i class="fa fa-home"></i>Mississauga,Ontario</p>
+		 		<p><i class="fa fa-linkedin"></i>linkedin.com/in/sairamya-barri</p>
+		 	</div><br>
+		 	<div><h5>Education</h5>
+		 		<p>Bachelor Degree</p>
+		 		<p>Major in computer Science Enginering</p>
+		 		<p>Jawaharlal Nehru Technological University</p>
+		 		<p>2008-2012</p></div><br>
+		 	
+		 	<div class="skills"><h5>Skills</h5>
+		 		<p>WEB TOOLS:    HTml,Css</p>
+		 		<p>JavaScript,Boot Strap</p>
+		 		<p>Web Design.</p>
+		 		<p>APPLICATIONS:     Ms Office 365,ServiceNow,GanttChart</p>
+		 		<p>PROJECT MANAGEMENT: Agile, Waterfall, Scrum and GanttCharts, Trello</p>
+		 		<p>TOOLS: VMware,G Suite by Google, PacketTracer </p>
+		 	</div><br>
+		 	<div><h5>Certifications</h5>
+		 	<p>CompTIA A+</p>
+		 	<p>Cisco IT Essential Certification</p>
+		 </div>
+		 </div><!--------------resumecoldisc------------->
+		</div><!----------resumecol--------------->
+    <div class="job">
+		<div class="title"><h3>SairamyaKrishna Barri</h3><span>Web Developer,IT analyst</span></div>
+		<div><h4>Summery of Skills</h4><br>
+			<p>●  Experience as a Web Designer and Technical support  in the IT industry as well as strong customer service experience <br>
+●  Developed full Functional websites including Ecommerce , Business related sites  using Html5, Css3, JavaScript, Bootstrap <br>
+●  Evaluated code to ensure that it is valid, properly structured, meets industry standards, compatible with browsers and all screen size devices<br>
+●  Customized and maintained websites, using frontend technologies content creation tools, management tools,plugins and digital media<br>
+●  Love of learning, collaborative team player with the ability to think outside the box to find solutions <br>
+●  Detailed-oriented, capable of completing multiple projects effectively and on time while creating a positive workplace culture<br>
+●  Strong written and verbal communication skills; that can effectively bridge the gap between business and technology stakeholder<br>
+●  Addition Languages: Telugu <br><br>
+</p>
+		</div>
+		 <h4>Experience</h4><br>
+		 <div><h5 style="font-weight: bold; padding-left: 5px;">Junior IT Analyst Jan2020 - May 2020</h5>
+<h6 style="padding-left: 5px;">NPower Canada │ Toronto, Canada</h6>
+<p>hands-on experience including for baseline security skills for IT support role</p>
+<p>● Worked in teams to develop problem solving skills to perform critical IT support tasks including data backup and recovery, ability to detect and remove malware, address privacy concerns</p>
+<p>● Assemble computer components based on customer requirements</p>
+<p>● Install, configure, and troubleshoot: hardware and software components</p>
+<p>● Install, configure, and troubleshoot: Windows, iOS, Android, and Linux operating systems</p>
+<p>● Networking basics: IPv6, network topologies, installing wireless and SOHO networks Security/forensics</p>
+<p>● Mobile device installation/configuration: Laptops, smartphones, tablets Android ,Apple products</p>
+<p>● Basics of virtualization, desktop imaging and deployment
+<p>● Gained familiarity with Network services(IP address, vpn, Tcp /Ip protocols, MAC address and Cloud Computing concepts (Saas , paas, Iaas) and cloud services</p>
+<p>● Implementing preventive maintenance measures on workstations</p>
+<p>● Customer support</p></div>
+
+
+
+	</div><!----------job------------>
+</div><!----------resumeexp-------->
+
+
+
+
+
+
+<div class="resumeexp">
+		
+		<div class="resumecol">
+		 	<img src="images/sairamya.jpg" width="150px"height="150px">
+		 	<div class="resumecoldisc">
+		 		<div><h5>contact</h5>
+		 		<p><i class="fa fa-phone"></i>123-456-7890</p>
+		 		<p><i class="fa fa-envelope"></i>sairamya.barri5@gmail.com</p>
+		 		<p><i class="fa fa-home"></i>Mississauga,Ontario</p>
+		 		<p><i class="fa fa-linkedin"></i>linkedin.com/in/sairamya-barri</p>
+		 	</div><br>
+		 	<div><h5>Education</h5>
+		 		<p>Bachelor Degree</p>
+		 		<p>Major in computer Science Enginering</p>
+		 		<p>Jawaharlal Nehru Technological University</p>
+		 		<p>2008-2012</p></div><br>
+		 	
+		 	<div class="skills"><h5>Skills</h5>
+		 		<p>WEB TOOLS:    HTml,Css</p>
+		 		<p>JavaScript,Boot Strap</p>
+		 		<p>Web Design.</p>
+		 		<p>APPLICATIONS:     Ms Office 365,ServiceNow,GanttChart</p>
+		 		<p>PROJECT MANAGEMENT: Agile, Waterfall, Scrum and GanttCharts, Trello</p>
+		 		<p>TOOLS: VMware,G Suite by Google, PacketTracer </p>
+		 	</div><br>
+		 	<div><h5>Certifications</h5>
+		 	<p>CompTIA A+</p>
+		 	<p>Cisco IT Essential Certification</p>
+		 </div>
+		 </div><!--------------resumecoldisc------------->
+		</div><!----------resumecol--------------->
+    <div class="job">
+		<div class="title"><h3>SairamyaKrishna Barri</h3><span>Web Developer,IT analyst</span></div>
+		 
+		 
+<div><h5 style="padding-left: 5px">Customer Experience Associate Oct - Dec 2019</h5>
+<h6 style="padding-left: 5px">Walmart │ Heartland , Ontario</h6>
+<p>• Maintained database of 50+ returned products and documented customer service transactions</p>
+<p>• Regularly met or exceeded stated sales goals for our team as well as Received an average 85% customer satisfaction rating to date 5% higher than company average</p>
+<p>• Provided a strong customer service experience to all patrons of the Store through effective verbal communication skills</p>
+<p>• Constantly took on additional tasks in order to help maintain the fast paced environment and prioritized work</p>
+<p>• Handle 80+ customers daily ,with duties including presenting relevant product information and memorized entire line company products & services including prices & promotions</p>
+<p>• Assisted in creating and executing a wide variety of promotional sales and marketing plans to increase customer based by 10%</p>
+<p>• Greeted customers with polite, courteous, and helpful attitude</p>
+</div> <br>
+<div><h5 style="padding-left: 5px">Web Designer (Internship) 2012 - 2013</h5>
+<h6 style="padding-left: 5px;">Naresh Technologies | Hyderabad , India</h6>
+<p>•  Implemented landing pages and features and functionalities using html and CSS Java Script through the deployment</p>
+<p>•  Created a dynamic website, maintaining shopping cart, designed promotional banners</p>
+<p>•  Updated and maintained the current website as well as assist in creating any new, future sites</p>
+<p>•  Collaborated with communications strategies team to improve website usability.</p>
+<p>•  Conducted design and code reviews to share knowledge with the development team as part of the website architecture.</p>
+<p>•  Kept the existing websites functional and updated new technologies and content.</p>
+<p>•  Using Strong computer/ technical skills involved in creating database tables, storing procedures, and designing front of web pages, proficient coding skills</p>
+<p>•  Designed, coded, and implemented program systems of various complexities</p>
+
+</div>
+</div><!--------------------job----------------->
+
+</div><!---------resumeexp-------------------->
+
+</div><!---------resumeexpcontainer-----------> 
+</div><!-------------------resumecontainer-------------->
+
+
+
+
+
+ <div class="footer" id="footer" style="margin-top: 300px;">
+      <h2>Contact Me</h2>
+      <div class="footerdisc">
+      <div class="col-4">
+         <p><i class="fa fa-home"></i></p>
+         <p>Location</p>
+         <p>Mississauga-Ontario</p>
+      </div>
+      <div class="col-4">
+         <p><i class="fa fa-phone"></i></p>
+         <p>Phone</p>
+         <p>123-456-7890</p>
+      </div>
+      <div class="col-4">
+         <p><i class="fa fa-envelope"></i></p>
+         <p>Email</p>
+         <p>sairamya.barri5@gmail.com</p>
+      </div>
+      <div class="col-4">
+         <p><i class="fa fa-map"></i></p>
+         <p>Location</p>
+         <p>Mississauga-Ontario</p>
+      </div>
+      </div>
+      <div class="mailbox">
+         <div class="col-2">
+         <ul> 
+            <li><a href="https://github.com/sairamyaKrishnaBarri5/"><i class="fa fa-github"></i></a></li>
+       <li><!----<button id="myBtn">----><i class="fa fa-envelope"></i></li>
+
+<!-- The Modal 
+<div id="myModal" class="modal">
+
+  <-- Modal content
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>-----></li>
+           <li>   <a href="https://www.linkedin.com/in/sairamya-barri"><i class="fa fa-linkedin"></i></a></li>
+         </ul> 
+      </div>
+         <input type="text" name="name" placeholder="Name">
+         <input type="email" name="email" placeholder="Email"><br>
+         <input type="text" name="adress"placeholder="Adress">
+         <input type="number" name="phone" placeholder="Number"><br>
+   <textarea id="message" rows="10" cols="56" placeholder="Message" style="border-radius: 5px; padding-left: 10px; font-family: 'Poppins',sans-serif"></textarea><br>
+   <button type="submit" class="btn">Send Message</button>
+      </div>
+   </div>
+<div>
+   
+   
+
+
+
+
+
+
+
+
+
+<script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle(){
+         if(MenuItems.style.maxHeight =="0px") {
+            MenuItems.style.maxHeight = "200px";
+         }
+         else {
+            MenuItems.style.maxHeight = "0px"
+         }
+      }
+    var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 1000,
+  speedAsDuration: true
+  });
+   </script>
+</body>
+</html>

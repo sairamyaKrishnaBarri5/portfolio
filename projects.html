@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&family=Poppins:ital,wght@1,500&family=Roboto&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<style type="text/css">
+	body{
+          background-color: rgba(0,0,0,0.7);
+	}
+
+	.projectcontainer .imagees{
+		margin: 0 auto;
+		width: 80%;
+	}
+	.imagees img {
+		margin: 20px 10px;
+		border-radius: 10px;
+		}
+	.imagees {
+		width: 90%;
+		margin: 20px auto;
+		text-align: center;
+	}
+	.filterDiv {
+		display: none;
+		float:left;
+
+	
+	}
+	.show {
+		display: flex;
+		
+
+	}
+	#myBtnContainer {
+		width: 40%;
+		margin: 20px auto 20px auto;
+
+	}
+	.btn .active{
+		background-color: #666;
+		color: white;
+	}
+	.btn{
+		border-radius: 0px;
+	
+	
+  display: inline-block;
+    background-color: rgba(0,0,0,0.7);
+    color: #000;
+    padding: 8px;
+    margin: 5px ;
+     border:none;
+     outline: none;
+    cursor: pointer;
+    color: #f4b400;
+} 
+
+	}
+	@media only screen and (max-width: 600px){
+		.imagees img{
+			width: 250px;
+			height: 250px;
+		}
+	}
+	@media only screen and (max-width: 800px){
+	.imagees img{
+		width: 300px;
+		height: 300px;
+	}
+}
+@media only screen and (min-width: 1300px){
+     nav {
+     	flex:0.92;
+     }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+	<div class="projectcontainer">
+	<div class="navbar">
+		<div class="logo">
+			<h2>portfolio</h2>
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="experience.html">WorkExperience</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="Projects.html">Projects</a></li>
+				<li><a href="#footer">Contact</a></li>
+			</ul>
+		</nav>
+		
+		<img src="images/menu.jpg" class="menu-icon"
+		onclick="menutoggle()">
+	</div>
+
+	   <div class="filter">
+	   	   <div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('ecommerce')">Ecommerce </button>
+  <button class="btn" onclick="filterSelection('restaurent')">Restaurent </button>
+  <button class="btn" onclick="filterSelection('beauty')"> Beauty </button>
+  <button class="btn" onclick="filterSelection('cart')">cart </button>
+  <button class="btn" onclick="filterSelection('online')">onlineShop </button>
+
+</div>
+	    
+		<div class="imagees">
+			<a href="https://sairamyakrishnabarri5.github.io/Businesswebsite/"><img src="images/cup2.png" width="350px" height="350px" class="filterDiv ecommerce restaurent"></a>
+		<img src="images/gap1.png" width="350px" height="350px" class=" filterDiv ecommerce online cart">
+		<a href="https://sairamyakrishnabarri5.github.io/BeautySalonwebsite/"><img src="images/angel1.png" width="350px" height="350px" class="beauty filterDiv"></a>
+		<a href= "https://sairamyakrishnabarri5.github.io/ecommercewebsite/"><img src="images/lavender1.png" width="350px" height="350px" class=" filterDiv ecommerce online"></a>
+		<a href="https://sairamyakrishnabarri5.github.io/myrestaurant-website/"><img src="images/ram11.png" width="350px" height="350px" class=" filterDiv restaurent"></a>
+		<a href=" https://sairamyakrishnabarri5.github.io/storecart/"><img src="images/cart.png" width="350px" height="350px" class=" filterDiv cart"></a>
+		<a href=" https://sairamyakrishnabarri5.github.io/slides/"><img src="images/slideshow.png" width="350px" height="350px" class=" filterDiv beauty" ></a>
+		<a href=""><img src="images/slider.png" width="350px" height="350px" class="filterDiv" ></a>
+	
+		
+	</div>
+</div>
+
+</div>
+<script>
+   	var MenuItems = document.getElementById("MenuItems");
+   	MenuItems.style.maxHeight = "0px";
+   	function menutoggle(){
+   		if(MenuItems.style.maxHeight =="0px") {
+   			MenuItems.style.maxHeight = "200px";
+   		}
+   		else {
+   			MenuItems.style.maxHeight = "0px"
+   		}
+   	}
+   	var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 1000,
+  speedAsDuration: true
+  });
+   </script>
+<script src="js/filter.js "></script>
+
+</body>
+</html>
