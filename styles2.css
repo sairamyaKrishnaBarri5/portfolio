@@ -48,7 +48,7 @@ p {
 	padding-right: 25px;
 
 }*/
-.projects .col-2 img{
+/*.projects .col-2 img{
 	position: relative;
 }
 .codelink{
@@ -76,7 +76,26 @@ p {
 .codelink:hover{
   width: 30px;
  
-} 
+} */
+.projects .row .col-2 {
+ 	
+ 	padding: 15px 10px;
+ }
+
+
+.projects .col-2 .live{
+	text-align: center;
+	top: 10px;
+	left: 5px;
+
+}
+.live a {
+	color: #000;
+	border-radius:5px;
+	padding: 6px 15px;
+	border:1px solid black; 
+	background:#f4b400; 
+}
 
 
 .row {
