@@ -1,223 +1,64 @@
-*{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-body{
-	background-color: #F4B400;
-	box-sizing: cover;
-}
-.main-container{
-	background-color: rgba(0,0,0,0.8);
-	width: 80%;
-	margin: 50px auto 20px auto;
-	height: 675px;
-	border-radius: 25px;
-	position: relative;
+.projectscontainer{
+		display: flex;
+		flex-wrap: wrap;
+		width: 95%;
+     margin: 20px auto 0px auto !important;
+     padding-top: 20px ;
+     padding-bottom: 40px; 
+     
 
+	}
+	.projects p{
+		width: 100%;
+	}
 
-
-}
-.title {
-	width: 90%;
-	margin: 0px auto;
-	display: flex;
-	justify-content: space-between;
-	
-}
-.header-nav  h2 {
-	margin: 30px 20px 10px 20px; 
-	font-family: 'Kaushan Script', cursive;
-	/*font-family: 'Poppins', sans-serif;*/
-	color: #F4B400;
-	font-weight: bold;
-	font-style: italic;
-	font-size: 2em;
-	text-transform: capitalize;
-	
-
-}
-#menu-items li {
-	float: left;
-	margin: 30px 20px 20px; 
-	font-family: 'Poppins', sans-serif;
-	color: #F4B400;
-	font-weight: bold;
-	font-style: italic;
-	font-size: 1em;
-	text-transform: capitalize;
-	list-style: none;
-	
-	
-
-}
-#menu-items li a{
-	font-family: 'Poppins', sans-serif;
-	color: #F4B400;
-	font-weight: bold;
-	font-style: italic;
-	font-size: 1em;
-	text-transform: capitalize;
-	text-decoration: none;
-
-}
-#menu-items li a:hover {
-	border-bottom: 2px solid red;
-	padding-bottom: 5px;
-}
-.banner {
-	display: flex;
-	align-items: center;
-	width: 80%;
+	.projectcontent{
+     flex-basis:30%; 
+     border: 2px solid #F4B400;
+     border-radius: 10px;
+     color: #0000;
+     text-align: center;
 	margin: 20px auto;
-
-	/*justify-content: space-between;*/
-	transition: 2s;
-
-}
-.intro {
-	transform: translateX(20px);
-}
-.intro-self li {
-	font-size: 25px;
-	color: #f7f7f7;
-	font-weight: bold;
-	list-style: none;
-	font-family:'Poppins',sans-serif;
-
-
-}
-.intro-disc {
-	font-size: 17px;
-	margin-top: 15px;
-	width: 400px;
-	color:white;
-
-}
-.introimg  img{
-	margin-left: 200px;
-	border-radius: 50%;
-	border-color: burlywood;
-	transform: translateY(-20px);
-	margin-right: 150px;
-}
-.resume {
-	margin: 15px;
-	padding: 10px 20px;
-	font-size: 15px;
-	background-color: #F4B400;
-	color: black;
-	border-radius: 5px;
-	cursor: pointer;
-	outline: none;
-	border: 1px solid#F4B400;
-}
-.resume:hover {
-	background-color: red; 
-}
-.menu-img{
-	width: 28px;
-	height: 28px;
-	margin: 20px 10px 10px ;
-	border: 1px solid #F4B400; 
-}
-.social-media {
-border-radius:5px;
-background:linear-gradient(rgba(0,0,0,0.5),#F4B400);
-
-
-	
-}
-.social-media p{
-	list-style: none;
-	padding-top: 20px;
-	padding-bottom: 30px; 
-    justify-content: none;
-	padding-right: 5px;
-	padding-left: 5px;
-	font-weight: bold;
-	color: #F4B400;
-	margin-left:  0px;
-	/*background-color: white;
-	background:linear-gradient(rgba(0,0,0,0.5),#89f7fe);*/
-	text-align: center; 
+  
 	}
-.social-media p a{
-	font-size: 20px;
-	width: 40px;
-	height: 40px;
-	border: 2px solid #F4B400;
-	padding: 8px;
-	color: white;
-	font-weight: bold;
-	
-}
-
-	
-.social-media p a:hover{
-    background-color: red;
-	color: black; 
-	cursor: pointer;
-	
-}
-
-	
-
-
-
-
-@media(min-width:1200px ){
-	.menu-icon {
-		display: none;
-
+	.col-6 img{
+		padding: 10px;
+	}
+	.projectcontent img{
+		width: 100%;
+		height: 250px;
+	}
+	.projectcontent p {
+     color: #000000;
+     font-size: 15px;
+     text-align: center;
+     text-align: left;
+     padding: 10px 20px;
+     
 	}
 	
-}
-@media(min-width: 992px) and (max-width:1199px){
-	.menu-icon {
-		display: none;
-	}
 	
-}
-
-@media(min-width:768px) and (max-width:991px){
-	/*.menu-icon {
-		display: none;
-	}*/
-	#menu-items li{
-		margin-right: 5px;
-	}
-	
-
-}
-@media(max-width: 767px){
-
-	#menu-items  li{
-		display:none;
-	}
-	.banner {
-		margin: 0px 0px 0;
-		display: block;
-		text-align: center;
-	
+	@media(max-width: 850px){
+		.projectscontainer{
+			display: block;
 		}
-	.intro {
-		display: block;
-		}.intro-disc {
-		width: 350px;
+		.projectcontent{
+			flex-basis: 100%;
+		}
+		.services p{
+			width: 100%;
+		}
+		.disc{
+			width: 90%;
+		}
+    .intro p, .intro h1 {
+    	padding: 0 10px;
+    }
 	}
-	.introimg img {
-		margin: 20px 0px 10px 45px;
-	
+	@media(min-width:1000px) and (max-width:1024px ){
+		.header{
+			height: 900px;
+		}
+		
 	}
-	.social-media {
-		display: none;
-	}
-
-}
-@media(max-width: 479px) {
-	#menu-items li{
-		display: none;
-	}
-}
 
